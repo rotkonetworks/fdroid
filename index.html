@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zodl F-Droid Repository</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 640px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      line-height: 1.5;
+    }
+    code, pre { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
+    pre { background: rgba(127,127,127,0.1); padding: 1rem; overflow-x: auto; border-radius: 6px; }
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.25rem;
+      margin: 0.5rem 0;
+      background: #1976d2;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+    .btn:hover { background: #1565c0; }
+    h1 { margin-bottom: 0.25rem; }
+    .sub { color: #888; margin-top: 0; }
+  </style>
+</head>
+<body>
+  <h1>Zodl F-Droid Repository</h1>
+  <p class="sub">Official self-hosted F-Droid repo for the Zodl Zcash Wallet.</p>
+
+  <h2>Add to F-Droid</h2>
+  <p>
+    <a class="btn" href="fdroidrepos://foss.zodl.com/fdroid/repo?fingerprint=7e751ab710159dff44f55631f910ba4033f0ebd2f867691af633cece4ddb62e4">
+      Add to F-Droid client
+    </a>
+  </p>
+  <p>Or manually add this URL in F-Droid → Settings → Repositories → +</p>
+  <pre>https://foss.zodl.com/fdroid/repo</pre>
+  <p>Fingerprint (SHA-256):</p>
+  <pre>7e751ab710159dff44f55631f910ba4033f0ebd2f867691af633cece4ddb62e4</pre>
+
+  <h2>Why a dedicated repo?</h2>
+  <p>
+    Unlike builds produced by f-droid.org from source, this repo is fed by
+    the Zodl CI which has access to build-time secrets (Flexa/CMC keys,
+    Crashlytics, etc.). APKs are signed with the same upload key as the
+    Google Play release — no reinstall needed when switching stores.
+  </p>
+
+  <h2>Source</h2>
+  <p>
+    Build: <a href="https://github.com/zodl-inc/zodl-android">zodl-inc/zodl-android</a><br>
+    Repo contents: <a href="https://github.com/zodl-inc/fdroid">zodl-inc/fdroid</a>
+  </p>
+</body>
+</html>
