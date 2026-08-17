@@ -43,7 +43,10 @@ jobs:
           scp -i ~/.ssh/id_deploy site.tar.gz deploy@www.rotko.net:/tmp/
           ssh -i ~/.ssh/id_deploy deploy@www.rotko.net bash -s <<'EOF'
           set -e
-          export XDG_RUNTIME_DIR=/run/user/$(id -u)
+          # root podman, not rootless: the deploy user's rootless overlay store
+          # on this host cannot mount image layers - every exec fails with
+          # "executable file not found", including a bare `alpine echo`.
+          # deploy has NOPASSWD sudo for /usr/bin/podman.
           cd /home/deploy
 
           cat > nginx-foss.conf << 'NGINX_EOF'
@@ -84,27 +87,27 @@ jobs:
           rm -rf foss.rotko.net/*
           mv /tmp/foss-stage/* foss.rotko.net/
 
-          podman stop foss-rotko-net 2>/dev/null || true
-          podman rm foss-rotko-net 2>/dev/null || true
+          sudo podman stop foss-rotko-net 2>/dev/null || true
+          sudo podman rm foss-rotko-net 2>/dev/null || true
 
-          podman run -d \
+          sudo podman run -d \
             --name foss-rotko-net \
             -p 127.0.0.1:55571:80 \
-            -v /home/deploy/foss.rotko.net:/usr/share/nginx/html:ro,Z \
-            -v /home/deploy/nginx-foss.conf:/etc/nginx/conf.d/default.conf:ro,Z \
+            -v /home/deploy/foss.rotko.net:/usr/share/nginx/html:ro \
+            -v /home/deploy/nginx-foss.conf:/etc/nginx/conf.d/default.conf:ro \
             --restart unless-stopped \
             nginx:alpine
 
           sleep 2
-          if ! podman ps | grep -q foss-rotko-net; then
+          if ! sudo podman ps | grep -q foss-rotko-net; then
             echo "container failed to start"
-            podman logs foss-rotko-net
+            sudo podman logs foss-rotko-net
             exit 1
           fi
 
           curl -f http://127.0.0.1:55571/ > /dev/null || {
             echo "site not responding"
-            podman logs foss-rotko-net
+            sudo podman logs foss-rotko-net
             exit 1
           }
           curl -f http://127.0.0.1:55571/fdroid/repo/index-v2.json > /dev/null || {
