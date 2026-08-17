@@ -1,0 +1,16 @@
+{
+  "repo": {
+    "timestamp": 1786947026726,
+    "version": 30000,
+    "name": "Rotko Networks (archive)",
+    "icon": "icon.png",
+    "description": "Older releases of apps published by Rotko Networks.",
+    "address": "https://foss.rotko.net/fdroid/archive"
+  },
+  "requests": {
+    "install": [],
+    "uninstall": []
+  },
+  "apps": [],
+  "packages": {}
+}

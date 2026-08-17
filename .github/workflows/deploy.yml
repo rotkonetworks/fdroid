@@ -1,0 +1,111 @@
+name: deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+env:
+  CONTAINER_NAME: foss-rotko-net
+  CONTAINER_PORT: 55571
+  PROJECT_DIR: foss.rotko.net
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: pack
+        run: |
+          if [ ! -f fdroid/repo/index-v2.json ]; then
+            echo "no signed index in fdroid/repo — run 'fdroid update' and commit it"
+            exit 1
+          fi
+          tar czf site.tar.gz index.html fdroid/
+
+      - name: setup ssh
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/id_deploy
+          chmod 600 ~/.ssh/id_deploy
+          ssh-keyscan -H www.rotko.net >> ~/.ssh/known_hosts
+
+      - name: deploy
+        run: |
+          scp -i ~/.ssh/id_deploy site.tar.gz deploy@www.rotko.net:/tmp/
+          ssh -i ~/.ssh/id_deploy deploy@www.rotko.net bash -s <<'EOF'
+          set -e
+          export XDG_RUNTIME_DIR=/run/user/$(id -u)
+          cd /home/deploy
+
+          cat > nginx-foss.conf << 'NGINX_EOF'
+          server {
+              listen 80;
+              server_name localhost;
+              root /usr/share/nginx/html;
+              index index.html;
+
+              gzip on;
+              gzip_vary on;
+              gzip_min_length 1024;
+              gzip_types text/plain text/css text/xml text/javascript application/javascript application/json;
+
+              # F-Droid clients poll the index; APKs are immutable once published.
+              location ~ ^/fdroid/(repo|archive)/.*\.apk$ {
+                  expires 1y;
+                  add_header Cache-Control "public, immutable";
+              }
+              location ~ ^/fdroid/(repo|archive)/(index|entry).* {
+                  expires 5m;
+                  add_header Cache-Control "public, must-revalidate";
+              }
+
+              location / {
+                  try_files $uri $uri/ =404;
+              }
+
+              add_header X-Frame-Options "SAMEORIGIN" always;
+              add_header X-Content-Type-Options "nosniff" always;
+              add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+          }
+          NGINX_EOF
+
+          rm -rf /tmp/foss-stage && mkdir -p /tmp/foss-stage
+          tar xzf /tmp/site.tar.gz -C /tmp/foss-stage
+          mkdir -p foss.rotko.net
+          rm -rf foss.rotko.net/*
+          mv /tmp/foss-stage/* foss.rotko.net/
+
+          podman stop foss-rotko-net 2>/dev/null || true
+          podman rm foss-rotko-net 2>/dev/null || true
+
+          podman run -d \
+            --name foss-rotko-net \
+            -p 127.0.0.1:55571:80 \
+            -v /home/deploy/foss.rotko.net:/usr/share/nginx/html:ro,Z \
+            -v /home/deploy/nginx-foss.conf:/etc/nginx/conf.d/default.conf:ro,Z \
+            --restart unless-stopped \
+            nginx:alpine
+
+          sleep 2
+          if ! podman ps | grep -q foss-rotko-net; then
+            echo "container failed to start"
+            podman logs foss-rotko-net
+            exit 1
+          fi
+
+          curl -f http://127.0.0.1:55571/ > /dev/null || {
+            echo "site not responding"
+            podman logs foss-rotko-net
+            exit 1
+          }
+          curl -f http://127.0.0.1:55571/fdroid/repo/index-v2.json > /dev/null || {
+            echo "index not served"
+            exit 1
+          }
+
+          rm -f /tmp/site.tar.gz
+          rm -rf /tmp/foss-stage
+          echo "deploy ok"
+          EOF

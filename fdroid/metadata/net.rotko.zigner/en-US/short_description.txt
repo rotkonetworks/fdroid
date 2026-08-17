@@ -1,0 +1,1 @@
+Air-gapped hardware signer for Zcash, Penumbra & Substrate

@@ -1,0 +1,112 @@
+{
+  "repo": {
+    "timestamp": 1786947028728,
+    "version": 30000,
+    "name": "Rotko Networks",
+    "icon": "icon.png",
+    "address": "https://foss.rotko.net/fdroid/repo",
+    "description": "Official F-Droid repository of Rotko Networks. Ships Zafu Zigner, the air-gapped Zcash, Penumbra and Substrate hardware signer, built and signed by Rotko Networks."
+  },
+  "requests": {
+    "install": [],
+    "uninstall": []
+  },
+  "apps": [
+    {
+      "allowedAPKSigningKeys": [
+        "2af9fee78a6cd6943c43b3f13b596555f1726282352595be4b29381ee761bf73"
+      ],
+      "authorName": "Rotko Networks",
+      "authorWebSite": "https://rotko.net",
+      "binaries": "https://github.com/rotkonetworks/zigner/releases/download/v%v/zigner-v%v.apk",
+      "categories": [
+        "Security",
+        "Money"
+      ],
+      "changelog": "https://github.com/rotkonetworks/zigner/blob/master/CHANGELOG.md",
+      "suggestedVersionName": "0.11.0",
+      "suggestedVersionCode": "11000",
+      "issueTracker": "https://github.com/rotkonetworks/zigner/issues",
+      "license": "GPL-3.0-only",
+      "sourceCode": "https://github.com/rotkonetworks/zigner",
+      "webSite": "https://zigner.zafu.pro",
+      "added": 1786946997426,
+      "icon": "net.rotko.zigner.11000.png",
+      "packageName": "net.rotko.zigner",
+      "lastUpdated": 1786946997426,
+      "localized": {
+        "en-US": {
+          "description": "Zigner turns a spare Android phone into an air-gapped cold wallet and hardware signer. Transactions arrive as QR codes, are displayed for review, and leave as QR codes \u2014 the private keys never touch a network.\n\nWhat it signs\n\nZcash (Orchard and transparent): RedPallas signatures over shielded actions, secp256k1 ECDSA for t-address inputs, with Ironwood (NU6.3 / V6) support.\n\nPenumbra: all transaction actions \u2014 shielded spends and outputs, DEX swaps, liquidity positions, delegations, votes, Dutch auctions, ICS20 withdrawals.\n\nPolkadot, Kusama and Cosmos: generic Substrate and Cosmos chain support.\n\nSecurity model\n\nPrivate keys are generated on-device and never leave the signing device. Every transaction is displayed for review before it is signed, and the chain ID is validated on every signing request. The device is meant to stay permanently offline \u2014 airplane mode with the wireless radios disabled. On compatible hardware (Pixel 8 and later, Samsung with Knox) seeds are encrypted into the secure element rather than held in main memory.\n\nFeatures\n\nFROST distributed key generation and threshold multisig, with age-encrypted share backup to one or more public keys. Full Viewing Key export for Penumbra (bech32m, UR). QR transaction protocol with fountain-coded animated QR for large payloads. Metadata parsing from trusted sources for Substrate and Cosmos. StrongBox support on high-security Android devices. Anchor attestation, which prevents fabricated note trees on Zcash.\n\nRecommended setup\n\nA Pixel 8 or later running GrapheneOS, kept offline, gives the strongest guarantees. See the project documentation for the full security and privacy discussion.\n\nWhat this is not\n\nZigner is not a hot wallet or a payment app, and it is not suited to frequent small transactions. It is a signer \u2014 it holds keys and approves transactions, and something else broadcasts them.\n\nZigner is part of the Zafu ecosystem, a suite of open-source Zcash tools, and shares its cryptographic logic with zafu-cli.\n",
+          "featureGraphic": "featureGraphic_9kazRya18QXtOUTfmP_J3Hx_sEHgGAaunFTaj0K0xI4=.png",
+          "icon": "icon_Kf5hrkxVRB5hT9YDlX9BkTVGvmQdRPrZb3yDnECBKI0=.png",
+          "name": "Zafu Zigner",
+          "summary": "Air-gapped hardware signer for Zcash, Penumbra & Substrate"
+        }
+      }
+    }
+  ],
+  "packages": {
+    "net.rotko.zigner": [
+      {
+        "added": 1786946997426,
+        "apkName": "zigner-v0.11.0.apk",
+        "features": [
+          "android.hardware.camera.any"
+        ],
+        "hash": "ba8bacfc196fa33f79c4f4790ec1941300de1ff549c7dc7586dc9aa0f3732874",
+        "hashType": "sha256",
+        "minSdkVersion": 23,
+        "nativecode": [
+          "arm64-v8a",
+          "armeabi-v7a",
+          "x86_64"
+        ],
+        "packageName": "net.rotko.zigner",
+        "sig": "da598a70f562102b424d2ca4f8133017",
+        "signer": "2af9fee78a6cd6943c43b3f13b596555f1726282352595be4b29381ee761bf73",
+        "size": 63223726,
+        "targetSdkVersion": 35,
+        "uses-permission": [
+          [
+            "android.permission.CAMERA",
+            null
+          ],
+          [
+            "android.permission.FLASHLIGHT",
+            null
+          ],
+          [
+            "android.permission.BLUETOOTH",
+            null
+          ],
+          [
+            "android.permission.ACCESS_WIFI_STATE",
+            null
+          ],
+          [
+            "android.permission.USE_BIOMETRIC",
+            null
+          ],
+          [
+            "android.permission.USE_FINGERPRINT",
+            null
+          ],
+          [
+            "net.rotko.zigner.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ],
+          [
+            "android.permission.ACCESS_NETWORK_STATE",
+            null
+          ],
+          [
+            "android.permission.INTERNET",
+            null
+          ]
+        ],
+        "versionCode": 11000,
+        "versionName": "0.11.0"
+      }
+    ]
+  }
+}

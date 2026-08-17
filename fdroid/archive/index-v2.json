@@ -1,0 +1,20 @@
+{
+  "repo": {
+    "name": {
+      "en-US": "Rotko Networks (archive)"
+    },
+    "description": {
+      "en-US": "Older releases of apps published by Rotko Networks."
+    },
+    "icon": {
+      "en-US": {
+        "name": "/icons/icon.png",
+        "sha256": "f745fa707c5cb5a2d9fbf65e4085398e8b76076e7b23c4526ee0d64f115cec97",
+        "size": 25767
+      }
+    },
+    "address": "https://foss.rotko.net/fdroid/archive",
+    "timestamp": 1786947026726
+  },
+  "packages": {}
+}

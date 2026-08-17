@@ -1,0 +1,33 @@
+{
+  "antiFeatures": {},
+  "apksigner": "/nix/store/0qn1jwzmb187ii8h7xxnamrdcvmf5vi5-apksigner-35.0.6/bin/apksigner",
+  "archivePolicy0": [],
+  "commandLine": [
+    "/nix/store/xsdhihfsa2ddr0l12nhqgdb5z9l5ymky-fdroidserver-2.4.5-unstable-2026-06-11/bin/fdroid update",
+    "--pretty"
+  ],
+  "disabled": [],
+  "endTimestamp": 1786947030647,
+  "failedBuilds": {},
+  "jarsigner": "/usr/lib/jvm/java-26-openjdk/bin/jarsigner",
+  "keytool": "/usr/lib/jvm/java-26-openjdk/bin/keytool",
+  "needsUpdate": [],
+  "noPackages": [
+    "net.rotko.zigner"
+  ],
+  "noUpdateCheck": [],
+  "stages": {
+    "archive_old_apks archive": 1786947026725,
+    "delete_disabled_builds": 1786947026724,
+    "index.make archive": 1786947026726,
+    "index.make repo": 1786947028728,
+    "prepare_apps archive": 1786947026725,
+    "prepare_apps repo": 1786947028655,
+    "process_apks": 1786947026724,
+    "read_added_date_from_all_apks": 1786947026725,
+    "remove_apks": 1786947026725,
+    "scan_repo_files": 1786947026724
+  },
+  "startTimestamp": 1786921826000,
+  "subcommand": "update"
+}

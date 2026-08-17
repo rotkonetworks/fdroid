@@ -1,0 +1,23 @@
+Categories:
+  - Security
+  - Money
+
+License: GPL-3.0-only
+AuthorName: Rotko Networks
+AuthorWebSite: https://rotko.net
+
+WebSite: https://zigner.zafu.pro
+SourceCode: https://github.com/rotkonetworks/zigner
+IssueTracker: https://github.com/rotkonetworks/zigner/issues
+Changelog: https://github.com/rotkonetworks/zigner/blob/master/CHANGELOG.md
+
+# Binaries published here are the signed artifacts from the tag's release
+# workflow in rotkonetworks/zigner — identical to the GitHub release assets.
+Binaries: https://github.com/rotkonetworks/zigner/releases/download/v%v/zigner-v%v.apk
+
+AllowedAPKSigningKeys: 2af9fee78a6cd6943c43b3f13b596555f1726282352595be4b29381ee761bf73
+
+AutoUpdateMode: None
+UpdateCheckMode: Static
+CurrentVersion: 0.11.0
+CurrentVersionCode: 11000
