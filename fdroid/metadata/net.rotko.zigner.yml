@@ -19,5 +19,5 @@ AllowedAPKSigningKeys: 2af9fee78a6cd6943c43b3f13b596555f1726282352595be4b29381ee
 
 AutoUpdateMode: None
 UpdateCheckMode: Static
-CurrentVersion: 0.11.0
-CurrentVersionCode: 11000
+CurrentVersion: 0.11.1
+CurrentVersionCode: 11001
