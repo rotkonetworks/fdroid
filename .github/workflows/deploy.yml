@@ -22,7 +22,14 @@ jobs:
             echo "no signed index in fdroid/repo — run 'fdroid update' and commit it"
             exit 1
           fi
-          tar czf site.tar.gz index.html fdroid/
+          # excludes come before the paths - after them tar silently ignores
+          # the option, which would publish the signing keystore
+          tar czf site.tar.gz \
+            --exclude='fdroid/config.yml' \
+            --exclude='fdroid/keystore.p12' \
+            --exclude='fdroid/metadata' \
+            --exclude='fdroid/tmp' \
+            index.html fdroid/
 
       - name: setup ssh
         run: |
