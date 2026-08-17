@@ -36,7 +36,9 @@ gh release download vX.Y.Z -R rotkonetworks/zigner \
   -p 'zigner-*.apk' -D fdroid/repo/
 
 # 2. regenerate and sign the index
-cd fdroid && fdroid update --pretty --clean
+#    (no --clean: it wipes repo/icons/icon.png and the next index ships a
+#     placeholder repo icon instead)
+cd fdroid && fdroid update --pretty
 
 # 3. commit and push — the deploy workflow rsyncs it to foss.rotko.net
 git add -A && git commit -m "release: zigner vX.Y.Z" && git push
