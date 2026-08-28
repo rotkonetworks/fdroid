@@ -1,16 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<fdroid>
-	<repo icon="icon.png" name="Rotko Networks" pubkey="3082054830820330a003020102020900e57269558471a36f300d06092a864886f70d01010b05003051310b300906035504061302464931173015060355040a130e526f746b6f204e6574776f726b733110300e060355040b1307462d44726f6964311730150603550403130e666f73732e726f746b6f2e6e65743020170d3236303831373035323531335a180f32303534303130323035323531335a3051310b300906035504061302464931173015060355040a130e526f746b6f204e6574776f726b733110300e060355040b1307462d44726f6964311730150603550403130e666f73732e726f746b6f2e6e657430820222300d06092a864886f70d01010105000382020f003082020a0282020100c9357c07a42272b3393068e9845d98711e97152140d71287c5350692a0b2705b3a2f401f6b16526748ed6dbbf4e4630de062c56ce19f8504841ed3fe7a26bedd9f2065148802f622a898f474621ce0b72bea5f50fb04d6617112fc5cd2a4f0845d77536d8c4481d61a2423f288f2630985db68f32222cee5eba2225041cccbe5f97462dfb6f0ad8c61693c5b83c225a04be34865043d5d026066563a79b2297611baa1e03428546e680d5c23cc79b80b1bdbb6c4ec3bd74fdd141ea752634c2c313748029f484f4bc58bf765dbb9e602db9fb3cf24bedf38a1a4bffd1568f0e1fd3b92f280933a150386e11b5bdb8219cca77e99be79adc86ef998934aedb1637245d6a909e81d7b13231afd0eaea50ba914e1bc16f1776da9da4e398ffa12c9e534a4ae91d7b1d96cb9d47f6ffd463c9e2c489467cb91d0c4887f4981ecbd98f5b5968713e528be8b08955034e2c09f362474d517eae98987a3f280c60b9aa3d1a1d0ef1a1453c0f338534cdcbfdf54b28f1180fef4d68f61b78a8fd17b5c6610d8ac18290bd8794f1b9a09bf6fba0153611ae87e638b92bf33570006fa552b641a0105bff239a08034fb8189c5c8b2da64e3147dc32e488af5cd0c7348be6b765d930cf0bc2b1e97230715345eb26532b240a8243f0973e7511ab041a8e728bf21e5e1d53174c37497817d052429c1ade6b0748efc4b61932d2938c8d0c5a90203010001a321301f301d0603551d0e041604145798811662eb0366acc30d44f6be6391bd9d9073300d06092a864886f70d01010b050003820201009342f10e4a6db6d1036bd182870327a0b3f5614c3371c8051f9b87a710f37c8875379303068aa45f1951ff50d0e3ef0a384ea6d4f9fcabb6ca1e2cf06ddb9816393121ad6d10c54ece97461c593b05933777731c4423cc8cede8e85b58b13b9dc1bf29acf85dcdd0ceae9190991c385b692552fb642535aae6ef650b53159ab98f187ae0d0f5149f1439d5dea9cf90627f205ccebf6bd0d5b2a80e5b6391d26edfd905f7fad0681e412eff3adf14c661f9af17b4a583756129f67f1de3f7a05ecdac09e3f675bce38643a11b660da0b972d40c93688519eac53963daedefc9427aeab9df6d2c691353dc2a2e44b9bd281acc2e30525364330ce1b9889b01027e5c02160acfd8832f5325cf59f6dc712ac9f4c6eb342dd34ba81faa69c4517cbdce4f4c7ef721448c3d2495074c7b791bc820e8b2f4f60cb1fe65312b4c80af73b176e0a2f88ca67904e8226d9b8a36df7a335fa9c426ae85e4e5fee7832664b19464dd6ea2cc2043d63c1c56f37df1f380b22d375ec377e815dab159b82ce8ec52214038fe29600370fb0bd6bdbe20e03b340c94d2e630602470b9bdcfb0ba137f4cdfde3dd3ff5a84c39e9a57f86feee107e730f5fd077fcd090c1c995228222bccdfb7e6e385da3904229395f6741a1edd24373164a632d4d7408e3dab9bc17274b15336279c55c510b545bea951e183e344a1c041810463b1d86b08b76cf7" timestamp="1786943901" url="https://foss.rotko.net/fdroid/repo" version="30000">
-		<description>Official F-Droid repository of Rotko Networks. Ships Zafu Zigner, the air-gapped Zcash, Penumbra and Substrate hardware signer, built and signed by Rotko Networks.</description>
-	</repo>
-	<application id="net.rotko.zigner">
-		<id>net.rotko.zigner</id>
-		<added>2026-08-17</added>
-		<lastupdated>2026-08-17</lastupdated>
-		<name>Zafu Zigner</name>
-		<summary>Air-gapped hardware signer for Zcash, Penumbra &amp; Substrate</summary>
-		<icon>net.rotko.zigner.11001.png</icon>
-		<desc>Zigner turns a spare Android phone into an air-gapped cold wallet and hardware signer. Transactions arrive as QR codes, are displayed for review, and leave as QR codes — the private keys never touch a network.
+<?xml version="1.0" encoding="utf-8"?><fdroid><repo icon="icon.png" name="Rotko Networks" pubkey="3082054830820330a003020102020900e57269558471a36f300d06092a864886f70d01010b05003051310b300906035504061302464931173015060355040a130e526f746b6f204e6574776f726b733110300e060355040b1307462d44726f6964311730150603550403130e666f73732e726f746b6f2e6e65743020170d3236303831373035323531335a180f32303534303130323035323531335a3051310b300906035504061302464931173015060355040a130e526f746b6f204e6574776f726b733110300e060355040b1307462d44726f6964311730150603550403130e666f73732e726f746b6f2e6e657430820222300d06092a864886f70d01010105000382020f003082020a0282020100c9357c07a42272b3393068e9845d98711e97152140d71287c5350692a0b2705b3a2f401f6b16526748ed6dbbf4e4630de062c56ce19f8504841ed3fe7a26bedd9f2065148802f622a898f474621ce0b72bea5f50fb04d6617112fc5cd2a4f0845d77536d8c4481d61a2423f288f2630985db68f32222cee5eba2225041cccbe5f97462dfb6f0ad8c61693c5b83c225a04be34865043d5d026066563a79b2297611baa1e03428546e680d5c23cc79b80b1bdbb6c4ec3bd74fdd141ea752634c2c313748029f484f4bc58bf765dbb9e602db9fb3cf24bedf38a1a4bffd1568f0e1fd3b92f280933a150386e11b5bdb8219cca77e99be79adc86ef998934aedb1637245d6a909e81d7b13231afd0eaea50ba914e1bc16f1776da9da4e398ffa12c9e534a4ae91d7b1d96cb9d47f6ffd463c9e2c489467cb91d0c4887f4981ecbd98f5b5968713e528be8b08955034e2c09f362474d517eae98987a3f280c60b9aa3d1a1d0ef1a1453c0f338534cdcbfdf54b28f1180fef4d68f61b78a8fd17b5c6610d8ac18290bd8794f1b9a09bf6fba0153611ae87e638b92bf33570006fa552b641a0105bff239a08034fb8189c5c8b2da64e3147dc32e488af5cd0c7348be6b765d930cf0bc2b1e97230715345eb26532b240a8243f0973e7511ab041a8e728bf21e5e1d53174c37497817d052429c1ade6b0748efc4b61932d2938c8d0c5a90203010001a321301f301d0603551d0e041604145798811662eb0366acc30d44f6be6391bd9d9073300d06092a864886f70d01010b050003820201009342f10e4a6db6d1036bd182870327a0b3f5614c3371c8051f9b87a710f37c8875379303068aa45f1951ff50d0e3ef0a384ea6d4f9fcabb6ca1e2cf06ddb9816393121ad6d10c54ece97461c593b05933777731c4423cc8cede8e85b58b13b9dc1bf29acf85dcdd0ceae9190991c385b692552fb642535aae6ef650b53159ab98f187ae0d0f5149f1439d5dea9cf90627f205ccebf6bd0d5b2a80e5b6391d26edfd905f7fad0681e412eff3adf14c661f9af17b4a583756129f67f1de3f7a05ecdac09e3f675bce38643a11b660da0b972d40c93688519eac53963daedefc9427aeab9df6d2c691353dc2a2e44b9bd281acc2e30525364330ce1b9889b01027e5c02160acfd8832f5325cf59f6dc712ac9f4c6eb342dd34ba81faa69c4517cbdce4f4c7ef721448c3d2495074c7b791bc820e8b2f4f60cb1fe65312b4c80af73b176e0a2f88ca67904e8226d9b8a36df7a335fa9c426ae85e4e5fee7832664b19464dd6ea2cc2043d63c1c56f37df1f380b22d375ec377e815dab159b82ce8ec52214038fe29600370fb0bd6bdbe20e03b340c94d2e630602470b9bdcfb0ba137f4cdfde3dd3ff5a84c39e9a57f86feee107e730f5fd077fcd090c1c995228222bccdfb7e6e385da3904229395f6741a1edd24373164a632d4d7408e3dab9bc17274b15336279c55c510b545bea951e183e344a1c041810463b1d86b08b76cf7" timestamp="1787890094" url="https://foss.rotko.net/fdroid/repo" version="20002"><description>Official F-Droid repository of Rotko Networks. Ships Zafu Zigner, the air-gapped Zcash, Penumbra and Substrate hardware signer, built and signed by Rotko Networks.</description></repo><application id="net.rotko.zigner"><id>net.rotko.zigner</id><added>2026-08-17</added><lastupdated>2026-08-17</lastupdated><name>Zafu Zigner</name><summary>Air-gapped hardware signer for Zcash, Penumbra &amp; Substrate</summary><desc>Zigner turns a spare Android phone into an air-gapped cold wallet and hardware signer. Transactions arrive as QR codes, are displayed for review, and leave as QR codes — the private keys never touch a network.
 
 What it signs
 
@@ -37,44 +25,4 @@ What this is not
 Zigner is not a hot wallet or a payment app, and it is not suited to frequent small transactions. It is a signer — it holds keys and approves transactions, and something else broadcasts them.
 
 Zigner is part of the Zafu ecosystem, a suite of open-source Zcash tools, and shares its cryptographic logic with zafu-cli.
-</desc>
-		<license>GPL-3.0-only</license>
-		<categories>Security,Money</categories>
-		<category>Security</category>
-		<web>https://zigner.zafu.pro</web>
-		<source>https://github.com/rotkonetworks/zigner</source>
-		<tracker>https://github.com/rotkonetworks/zigner/issues</tracker>
-		<changelog>https://github.com/rotkonetworks/zigner/blob/master/CHANGELOG.md</changelog>
-		<author>Rotko Networks</author>
-		<marketversion>0.11.1</marketversion>
-		<marketvercode>11001</marketvercode>
-		<package>
-			<version>0.11.1</version>
-			<versioncode>11001</versioncode>
-			<apkname>zigner-v0.11.1.apk</apkname>
-			<hash type="sha256">80138b8108fd6fd5957b7ae38344f3dd7b9dfd13238197b6531538834e6f6615</hash>
-			<size>63326126</size>
-			<sdkver>23</sdkver>
-			<targetSdkVersion>35</targetSdkVersion>
-			<added>2026-08-17</added>
-			<sig>da598a70f562102b424d2ca4f8133017</sig>
-			<permissions>ACCESS_NETWORK_STATE,ACCESS_WIFI_STATE,BLUETOOTH,CAMERA,FLASHLIGHT,INTERNET,USE_BIOMETRIC,USE_FINGERPRINT,net.rotko.zigner.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</permissions>
-			<nativecode>arm64-v8a,armeabi-v7a,x86_64</nativecode>
-			<features>android.hardware.camera.any</features>
-		</package>
-		<package>
-			<version>0.11.0</version>
-			<versioncode>11000</versioncode>
-			<apkname>zigner-v0.11.0.apk</apkname>
-			<hash type="sha256">ba8bacfc196fa33f79c4f4790ec1941300de1ff549c7dc7586dc9aa0f3732874</hash>
-			<size>63223726</size>
-			<sdkver>23</sdkver>
-			<targetSdkVersion>35</targetSdkVersion>
-			<added>2026-08-17</added>
-			<sig>da598a70f562102b424d2ca4f8133017</sig>
-			<permissions>ACCESS_NETWORK_STATE,ACCESS_WIFI_STATE,BLUETOOTH,CAMERA,FLASHLIGHT,INTERNET,USE_BIOMETRIC,USE_FINGERPRINT,net.rotko.zigner.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</permissions>
-			<nativecode>arm64-v8a,armeabi-v7a,x86_64</nativecode>
-			<features>android.hardware.camera.any</features>
-		</package>
-	</application>
-</fdroid>
+</desc><license>GPL-3.0-only</license><categories>Security,Money</categories><category>Security</category><web>https://zigner.zafu.pro</web><source>https://github.com/rotkonetworks/zigner</source><tracker>https://github.com/rotkonetworks/zigner/issues</tracker><changelog>https://github.com/rotkonetworks/zigner/blob/master/CHANGELOG.md</changelog><author>Rotko Networks</author><marketversion>0.11.1</marketversion><marketvercode>11001</marketvercode><package><version>0.11.1</version><versioncode>11001</versioncode><apkname>zigner-v0.11.1.apk</apkname><hash type="sha256">80138b8108fd6fd5957b7ae38344f3dd7b9dfd13238197b6531538834e6f6615</hash><size>63326126</size><sdkver>23</sdkver><targetSdkVersion>35</targetSdkVersion><added>2026-08-17</added><sig>da598a70f562102b424d2ca4f8133017</sig><permissions>ACCESS_NETWORK_STATE,ACCESS_WIFI_STATE,BLUETOOTH,CAMERA,FLASHLIGHT,INTERNET,USE_BIOMETRIC,USE_FINGERPRINT,net.rotko.zigner.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</permissions><nativecode>arm64-v8a,armeabi-v7a,x86_64</nativecode><features>android.hardware.camera.any</features></package><package><version>0.11.0</version><versioncode>11000</versioncode><apkname>zigner-v0.11.0.apk</apkname><hash type="sha256">ba8bacfc196fa33f79c4f4790ec1941300de1ff549c7dc7586dc9aa0f3732874</hash><size>63223726</size><sdkver>23</sdkver><targetSdkVersion>35</targetSdkVersion><added>2026-08-17</added><sig>da598a70f562102b424d2ca4f8133017</sig><permissions>ACCESS_NETWORK_STATE,ACCESS_WIFI_STATE,BLUETOOTH,CAMERA,FLASHLIGHT,INTERNET,USE_BIOMETRIC,USE_FINGERPRINT,net.rotko.zigner.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</permissions><nativecode>arm64-v8a,armeabi-v7a,x86_64</nativecode><features>android.hardware.camera.any</features></package></application></fdroid>
