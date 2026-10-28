@@ -1,0 +1,68 @@
+{
+  "repo": {
+    "timestamp": 1793217373000
+  },
+  "packages": {
+    "net.rotko.zigner": {
+      "metadata": {
+        "lastUpdated": 1793217371000
+      },
+      "versions": {
+        "102aa28209117ff3b328591848c4c39e00b4e1fbe53303fd087abc1b337d64a1": {
+          "added": 1793217371000,
+          "file": {
+            "name": "/zigner-v0.13.0.apk",
+            "sha256": "102aa28209117ff3b328591848c4c39e00b4e1fbe53303fd087abc1b337d64a1",
+            "size": 63744371
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86_64"
+            ],
+            "versionName": "0.13.0",
+            "versionCode": 13000,
+            "features": [
+              {
+                "name": "android.hardware.camera.any"
+              }
+            ],
+            "usesSdk": {
+              "minSdkVersion": 23,
+              "targetSdkVersion": 35
+            },
+            "signer": {
+              "sha256": [
+                "2af9fee78a6cd6943c43b3f13b596555f1726282352595be4b29381ee761bf73"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.FLASHLIGHT"
+              },
+              {
+                "name": "android.permission.BLUETOOTH"
+              },
+              {
+                "name": "android.permission.ACCESS_WIFI_STATE"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "net.rotko.zigner.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

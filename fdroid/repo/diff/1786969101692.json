@@ -1,1 +1,88 @@
-{"repo": {"icon": {"en-US": {"sha256": "b4105f1363e95a03913ab170a90b3ff7a8e710a95aedd9564c46a97accb02ad6", "size": 191008}}, "timestamp": 1787890094000}, "packages": {"net.rotko.zigner": {"metadata": {"added": 1786946997000, "lastUpdated": 1786969096000, "icon": {"en-US": {"name": "/net.rotko.zigner/en-US/icon_atGmztsPyJOncgiYvCMSmmPZMa7LECgwNtgamHqAQKM=.png", "sha256": "6ad1a6cedb0fc893a7720898bc23129a63d931aecb10283036d81a987a8040a3", "size": 18572}}}, "versions": {"80138b8108fd6fd5957b7ae38344f3dd7b9dfd13238197b6531538834e6f6615": {"added": 1786969096000}, "ba8bacfc196fa33f79c4f4790ec1941300de1ff549c7dc7586dc9aa0f3732874": {"added": 1786946997000}}}}}
+{
+  "repo": {
+    "icon": {
+      "en-US": {
+        "sha256": "b4105f1363e95a03913ab170a90b3ff7a8e710a95aedd9564c46a97accb02ad6",
+        "size": 191008
+      }
+    },
+    "timestamp": 1793217373000
+  },
+  "packages": {
+    "net.rotko.zigner": {
+      "metadata": {
+        "added": 1786946997000,
+        "lastUpdated": 1793217371000,
+        "icon": {
+          "en-US": {
+            "name": "/net.rotko.zigner/en-US/icon_atGmztsPyJOncgiYvCMSmmPZMa7LECgwNtgamHqAQKM=.png",
+            "sha256": "6ad1a6cedb0fc893a7720898bc23129a63d931aecb10283036d81a987a8040a3",
+            "size": 18572
+          }
+        }
+      },
+      "versions": {
+        "102aa28209117ff3b328591848c4c39e00b4e1fbe53303fd087abc1b337d64a1": {
+          "added": 1793217371000,
+          "file": {
+            "name": "/zigner-v0.13.0.apk",
+            "sha256": "102aa28209117ff3b328591848c4c39e00b4e1fbe53303fd087abc1b337d64a1",
+            "size": 63744371
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86_64"
+            ],
+            "versionName": "0.13.0",
+            "versionCode": 13000,
+            "features": [
+              {
+                "name": "android.hardware.camera.any"
+              }
+            ],
+            "usesSdk": {
+              "minSdkVersion": 23,
+              "targetSdkVersion": 35
+            },
+            "signer": {
+              "sha256": [
+                "2af9fee78a6cd6943c43b3f13b596555f1726282352595be4b29381ee761bf73"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.FLASHLIGHT"
+              },
+              {
+                "name": "android.permission.BLUETOOTH"
+              },
+              {
+                "name": "android.permission.ACCESS_WIFI_STATE"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "net.rotko.zigner.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          }
+        },
+        "80138b8108fd6fd5957b7ae38344f3dd7b9dfd13238197b6531538834e6f6615": {
+          "added": 1786969096000
+        },
+        "ba8bacfc196fa33f79c4f4790ec1941300de1ff549c7dc7586dc9aa0f3732874": {
+          "added": 1786946997000
+        }
+      }
+    }
+  }
+}
