@@ -3,11 +3,12 @@
     "description": {
       "en-US": "Official F-Droid repository of Rotko Networks. Ships Zigner, the shielded air-gap signer for Zcash and Penumbra, built and signed by Rotko Networks."
     },
-    "timestamp": 1794987147000
+    "timestamp": 1794991793000
   },
   "packages": {
     "net.rotko.zigner": {
       "metadata": {
+        "lastUpdated": 1794991791000,
         "featureGraphic": {
           "en-US": {
             "name": "/net.rotko.zigner/en-US/featureGraphic_RCyNC77pMtddnp5KKDoL0te7oMl9C9Um-SbgX51v1nM=.png",
@@ -27,6 +28,65 @@
             "sha256": "12f5f938f2fd27b0557fbe72ccf71f02cad5667fc9d836a0c39404ba20488c81",
             "size": 220238
           }
+        }
+      },
+      "versions": {
+        "69fa0bced025eebafe7226d07f49b841a3f9bdbfde6d181b3b20d9943eb96f5a": {
+          "added": 1794991791000,
+          "file": {
+            "name": "/zigner-v0.15.0.apk",
+            "sha256": "69fa0bced025eebafe7226d07f49b841a3f9bdbfde6d181b3b20d9943eb96f5a",
+            "size": 63199716
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86_64"
+            ],
+            "versionName": "0.15.0",
+            "versionCode": 15000,
+            "features": [
+              {
+                "name": "android.hardware.camera.any"
+              }
+            ],
+            "usesSdk": {
+              "minSdkVersion": 23,
+              "targetSdkVersion": 35
+            },
+            "signer": {
+              "sha256": [
+                "2af9fee78a6cd6943c43b3f13b596555f1726282352595be4b29381ee761bf73"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.CAMERA"
+              },
+              {
+                "name": "android.permission.FLASHLIGHT"
+              },
+              {
+                "name": "android.permission.BLUETOOTH"
+              },
+              {
+                "name": "android.permission.ACCESS_WIFI_STATE"
+              },
+              {
+                "name": "android.permission.USE_BIOMETRIC"
+              },
+              {
+                "name": "android.permission.USE_FINGERPRINT"
+              },
+              {
+                "name": "net.rotko.zigner.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          },
+          "releaseChannels": [
+            "Beta"
+          ]
         }
       }
     }
