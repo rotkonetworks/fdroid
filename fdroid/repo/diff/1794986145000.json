@@ -1,0 +1,21 @@
+{
+  "repo": {
+    "timestamp": 1794987133000
+  },
+  "packages": {
+    "net.rotko.zigner": {
+      "metadata": {
+        "name": {
+          "en-US": "Zigner"
+        },
+        "icon": {
+          "en-US": {
+            "name": "/net.rotko.zigner/en-US/icon_EvX5OPL9J7BVf75yzPcfAsrVZn_J2Dagw5QEuiBIjIE=.png",
+            "sha256": "12f5f938f2fd27b0557fbe72ccf71f02cad5667fc9d836a0c39404ba20488c81",
+            "size": 220238
+          }
+        }
+      }
+    }
+  }
+}

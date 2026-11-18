@@ -1,6 +1,6 @@
 # Rotko Networks F-Droid Repository
 
-Self-hosted F-Droid repository for **[Zafu Zigner](https://github.com/rotkonetworks/zigner)**,
+Self-hosted F-Droid repository for **[Zigner](https://github.com/rotkonetworks/zigner)**,
 the shielded air-gap signer for Zcash and Penumbra.
 
 Served from <https://foss.rotko.net> (haproxy → nginx container on
