@@ -3,6 +3,19 @@
     "description": {
       "en-US": "Official F-Droid repository of Rotko Networks. Ships Zigner, the shielded air-gap signer for Zcash and Penumbra, built and signed by Rotko Networks."
     },
-    "timestamp": 1794983158000
+    "timestamp": 1794985847000
+  },
+  "packages": {
+    "net.rotko.zigner": {
+      "metadata": {
+        "featureGraphic": {
+          "en-US": {
+            "name": "/net.rotko.zigner/en-US/featureGraphic_RCyNC77pMtddnp5KKDoL0te7oMl9C9Um-SbgX51v1nM=.png",
+            "sha256": "442c8d0bbee932d75d9e9e4a283a0bd2d7bba0c97d0bd526f926e05f9d6fd673",
+            "size": 171280
+          }
+        }
+      }
+    }
   }
 }
