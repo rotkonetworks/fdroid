@@ -7,7 +7,7 @@
     "--pretty"
   ],
   "disabled": [],
-  "endTimestamp": 1794987135692,
+  "endTimestamp": 1794987148906,
   "failedBuilds": {},
   "jarsigner": "/usr/lib/jvm/java-27-openjdk/bin/jarsigner",
   "keytool": "/usr/lib/jvm/java-27-openjdk/bin/keytool",
@@ -17,17 +17,17 @@
   ],
   "noUpdateCheck": [],
   "stages": {
-    "archive_old_apks archive": 1794987131952,
-    "delete_disabled_builds": 1794987131951,
-    "index.make archive": 1794987131952,
-    "index.make repo": 1794987133873,
-    "prepare_apps archive": 1794987131952,
-    "prepare_apps repo": 1794987133778,
-    "process_apks": 1794987131951,
-    "read_added_date_from_all_apks": 1794987131952,
-    "remove_apks": 1794987131951,
-    "scan_repo_files": 1794987131951
+    "archive_old_apks archive": 1794987145257,
+    "delete_disabled_builds": 1794987145256,
+    "index.make archive": 1794987145257,
+    "index.make repo": 1794987147087,
+    "prepare_apps archive": 1794987145257,
+    "prepare_apps repo": 1794987147085,
+    "process_apks": 1794987145256,
+    "read_added_date_from_all_apks": 1794987145257,
+    "remove_apks": 1794987145257,
+    "scan_repo_files": 1794987145256
   },
-  "startTimestamp": 1794961931000,
+  "startTimestamp": 1794961945000,
   "subcommand": "update"
 }
