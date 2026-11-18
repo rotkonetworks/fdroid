@@ -6,15 +6,13 @@ Zcash (Orchard and transparent): RedPallas signatures over shielded actions, sec
 
 Penumbra: all transaction actions — shielded spends and outputs, DEX swaps, liquidity positions, delegations, votes, Dutch auctions, ICS20 withdrawals.
 
-Polkadot, Kusama and Cosmos: generic Substrate and Cosmos chain support.
-
 Security model
 
 Private keys are generated on-device and never leave the signing device. Every transaction is displayed for review before it is signed, and the chain ID is validated on every signing request. The device is meant to stay permanently offline — airplane mode with the wireless radios disabled. On compatible hardware (Pixel 8 and later, Samsung with Knox) seeds are encrypted into the secure element rather than held in main memory.
 
 Features
 
-FROST distributed key generation and threshold multisig, with age-encrypted share backup to one or more public keys. Full Viewing Key export for Penumbra (bech32m, UR). QR transaction protocol with fountain-coded animated QR for large payloads. Metadata parsing from trusted sources for Substrate and Cosmos. StrongBox support on high-security Android devices. Anchor attestation, which prevents fabricated note trees on Zcash.
+FROST distributed key generation and threshold multisig, with age-encrypted share backup to one or more public keys. Full Viewing Key export for Penumbra (bech32m, UR). QR transaction protocol with fountain-coded animated QR for large payloads. StrongBox support on high-security Android devices. Anchor attestation, which prevents fabricated note trees on Zcash.
 
 Recommended setup
 

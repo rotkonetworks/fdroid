@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Zafu Zigner — F-Droid Repository</title>
-  <meta name="description" content="Official F-Droid repository of Rotko Networks. Zafu Zigner: air-gapped hardware signer for Zcash, Penumbra and Substrate." />
+  <meta name="description" content="Official F-Droid repository of Rotko Networks. Zigner: the shielded air-gap signer for Zcash and Penumbra." />
   <style>
     :root { color-scheme: light dark; }
     *, *::before, *::after { box-sizing: border-box; }
@@ -76,7 +76,7 @@
          alt="Zigner icon" />
     <div>
       <h1>Zafu Zigner</h1>
-      <p class="tagline">Air-gapped hardware signer for Zcash, Penumbra &amp; Substrate.</p>
+      <p class="tagline">The shielded air-gap signer for Zcash and Penumbra.</p>
     </div>
   </div>
 
@@ -105,8 +105,6 @@
     actions, secp256k1 ECDSA for t-address inputs, with Ironwood (NU6.3 / V6) support.</p>
     <p><strong>Penumbra</strong>: all transaction actions — shielded spends and outputs,
     DEX swaps, liquidity positions, delegations, votes, Dutch auctions, ICS20 withdrawals.</p>
-    <p><strong>Polkadot, Kusama and Cosmos</strong>: generic Substrate and Cosmos chain
-    support.</p>
 
     <h2>Security model</h2>
     <p>Private keys are generated on-device and never leave the signing device. Every
@@ -119,8 +117,7 @@
     <h2>Features</h2>
     <p>FROST distributed key generation and threshold multisig, with age-encrypted share
     backup to one or more public keys. Full Viewing Key export for Penumbra (bech32m, UR).
-    QR transaction protocol with fountain-coded animated QR for large payloads. Metadata
-    parsing from trusted sources for Substrate and Cosmos. StrongBox support on
+    QR transaction protocol with fountain-coded animated QR for large payloads. StrongBox support on
     high-security Android devices. Anchor attestation, which prevents fabricated note trees
     on Zcash.</p>
 
